@@ -7,12 +7,12 @@ class App extends Component {
   render() {
     return (
       <>
-    <Header/>
-    <Main/>
-    <Footer/>
-    </>
-    )
+        <Header />
+        <Main />
+        <Footer />
+      </>
+    );
   }
 }
 
-        export default App
+export default App;
