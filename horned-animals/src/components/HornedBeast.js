@@ -15,12 +15,7 @@ class HornedBeast extends Component {
         })
 
     }
-    // addhearts = ()=>{
-    //     this.setState({
-    //         heart: <p>&#10084;	</p>,
-
-    //     })
-    // }
+    
                 render() {
         const mystyle = {
                     width: "400px",
