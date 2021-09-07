@@ -24,12 +24,17 @@ class HornedBeast extends Component {
           };
                 return (
                 <>
-                    <h2>{this.props.name}</h2>
-                    <img src={this.props.src} alt={this.props.name} title={this.props.title} style={mystyle} onClick={this.addVotes} />
-                    <div>{this.state.hearts}</div>
-                    <p>Horns: {this.props.horns}</p>
-                    <p>{this.props.description}</p>
-                    <p>Number of votes: {this.state.votes}</p>
+                     <h2>{this.props.keyword}</h2>
+                <img
+                 src={this.props.image_url} 
+                alt={this.props.name} 
+                title={this.props.title} 
+                style={mystyle} onClick={this.addVotes} 
+                />
+                <div>{this.state.hearts}</div>  
+                <p>Horns: {this.props.horns}</p>
+                <p>{this.props.description}</p>
+                <p>Number of votes: {this.state.votes}</p>
                     
 
                 </>
