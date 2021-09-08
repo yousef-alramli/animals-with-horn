@@ -24,7 +24,8 @@ class App extends Component {
 
   handleClose = () => {
     this.setState({
-      showModal: false
+      showModal: false,
+      
     });
   }
   handleOpen = (name, image_url, description) => {
@@ -43,6 +44,7 @@ class App extends Component {
     })
   }
   render() {
+     
     return (
       <>
         <Header />
