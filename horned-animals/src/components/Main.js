@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import {
+    Col
+} from "react-bootstrap"
 import HornedBeast from './HornedBeast';
-import beastData from '../data.json'
+
 class Main extends Component {
     
 
 
     render() {
+        
+        
         return (
-            <>
+            <div className = 'row'>
+            
+            
                 {
-                    beastData.map(item => {
+                    this.props.data.map(item => {
                         return <HornedBeast keyword={item.keyword}
                             image_url={item.image_url}
                             title={item.title}
@@ -19,7 +26,7 @@ class Main extends Component {
                             />
                     })
                 }
-            </>
+            </div>
         )
     };
 }
