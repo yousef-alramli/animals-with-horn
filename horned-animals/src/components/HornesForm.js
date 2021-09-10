@@ -16,7 +16,7 @@ class Hornsform extends Component {
                 <Form >
                     <Form.Label>Filter by horns number</Form.Label>
                     <select name="cars" id="cars" onChange={this.filterByHorns}>
-                        <option value="">choose number</option>
+                        <option value="0">choose number</option>
                         <option value="1">1 Horn</option>
                         <option value="2">2 Horns</option>
                         <option value="3">3 Horns</option>

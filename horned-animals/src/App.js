@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import beastData from './data.json'
 import Main from "./components/Main";
 import SelectedBeast from "./components/SelectedBeast";
-import HornsForm from "./components/HornesForm";
 class App extends Component {
 
   constructor(props) {
@@ -17,7 +16,6 @@ class App extends Component {
       image_url: '',
       description: '',
       data: beastData,
-      filterHorns:''
     }
 
   }
@@ -36,21 +34,12 @@ class App extends Component {
       description: description,
     });
   }
-  filterByHorns = (e)=> {
-    let filterHorns=e.target.value;
-   
-    this.setState({
-      filterHorns:filterHorns,
-    })
-  }
+ 
   render() {
      
     return (
       <>
         <Header />
-        <HornsForm
-         filterByHorns ={this.filterByHorns}
-         />
         <Main handleOpen={this.handleOpen}
               data ={this.state.data}
               filterHorns={this.state.filterHorns}
